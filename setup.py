@@ -15,6 +15,9 @@ setup(
     install_requires=[
         'South == 0.8.4',
         'django == 1.6',
+        'djangorestframework == 2.3.14',
+        'markdown == 2.4.1',
+        'django-filter == 0.7'
     ],
     license='BSD, see LICENSE file.',
     packages=find_packages(),

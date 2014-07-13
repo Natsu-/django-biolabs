@@ -1,3 +1,9 @@
 from django.contrib import admin
 
-# Register your models here.
+from biolabs.core.models import Laboratory
+
+
+class LaboratoryAdmin(admin.ModelAdmin):
+    pass
+
+admin.site.register(Laboratory, LaboratoryAdmin)
