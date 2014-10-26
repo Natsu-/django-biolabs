@@ -10,5 +10,5 @@ class LaboratoryViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows labs to be viewed or edited.
     """
-    queryset = core_models.Laboratory.objects.all()
+    queryset = core_models.Laboratory.objects.filter(is_moderated=True)
     serializer_class = LaboratorySerializer
