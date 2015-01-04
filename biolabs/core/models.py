@@ -14,3 +14,6 @@ class Laboratory(models.Model):
 
     latitude = models.DecimalField(max_digits=10, decimal_places=8)
     longitude = models.DecimalField(max_digits=11, decimal_places=8)
+
+    def __unicode__(self):
+        return self.name
