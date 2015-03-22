@@ -37,7 +37,8 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'biolabs.core'
+    'biolabs.core',
+    'south',
 )
 
 MIDDLEWARE_CLASSES = (
