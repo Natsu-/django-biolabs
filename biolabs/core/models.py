@@ -1,4 +1,5 @@
 from django.db import models
+from django_countries.fields import CountryField
 
 
 # Create your models here.
@@ -14,6 +15,8 @@ class Laboratory(models.Model):
 
     latitude = models.DecimalField(max_digits=10, decimal_places=8, blank=True, null=True)
     longitude = models.DecimalField(max_digits=11, decimal_places=8, blank=True, null=True)
+
+    country = CountryField(blank=True, null=True)
 
     def __unicode__(self):
         return self.name

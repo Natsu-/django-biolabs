@@ -7,8 +7,9 @@ class LaboratorySerializer(serializers.HyperlinkedModelSerializer):
     adress = serializers.CharField(required=False, max_length=255)
     latitude = serializers.DecimalField(required=False, max_digits=23, decimal_places=20)
     longitude = serializers.DecimalField(required=False, max_digits=23, decimal_places=20)
+    country = serializers.CharField(required=False, max_length=255)
 
     class Meta:
         model = core_models.Laboratory
-        fields = ('name', 'description', 'url', 'adress',
+        fields = ('name', 'description', 'url', 'adress', 'country',
                   'latitude', 'longitude')
